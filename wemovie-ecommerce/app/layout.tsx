@@ -1,5 +1,6 @@
 import { Header } from "@/components/header";
 import { cn } from "@/lib/utils";
+import { TanstackProvider } from "@/providers/providerTanstack";
 import type { Metadata } from "next";
 import { Geist, Open_Sans } from "next/font/google";
 import "./globals.css";
@@ -29,7 +30,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col dark">
         <Header />
-        {children}
+        <TanstackProvider>{children}</TanstackProvider>
       </body>
     </html>
   );
