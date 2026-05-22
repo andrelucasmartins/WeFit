@@ -11,3 +11,4 @@ This version has breaking changes — APIs, conventions, and file structure may 
     TypeScript strict com target ES2024 e module resolution nodenext
     ESLint com typescript-eslint, integracao com prettier e simple-import-sort (imports devem ser ordenados)
     Zod 4 para validacao (usa padrao z.interface(), nao z.object())
+    Nao usar CSS inline ou style hardcoded no JSX: prefira classes utilitarias ou variaveis CSS definidas globalmente
