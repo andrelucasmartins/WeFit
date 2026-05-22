@@ -13,7 +13,10 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "WeMovies | %s",
+  title: {
+    template: "%s | WeMovies",
+    default: "WeMovies",
+  },
   description: "Ecommerce de filmes para os amantes da sétima arte.",
 };
 
