@@ -12,17 +12,16 @@ export const PurchaseSuccessful = () => {
       <Image
         src="/purchase_successful.svg"
         width={238}
-        height={247.72}
+        height={248}
         className="mx-auto mb-4 w-full max-w-59.5 h-auto md:hidden"
-        alt="Dados não encontrados..."
+        alt="Compra realizada com sucesso..."
       />
       <Image
         src="/purchase_successful_large.svg"
-        width={294.96}
+        width={295}
         height={307}
-        loading="eager"
-        className="mx-auto mb-4 w-full max-w-[294.96px] h-auto md:block hidden"
-        alt="Dados não encontrados..."
+        className="mx-auto mb-4 w-full max-w-[295px] h-auto md:block hidden"
+        alt="Compra realizada com sucesso..."
       />
       <Button
         variant="secondary"
