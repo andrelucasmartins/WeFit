@@ -31,7 +31,7 @@ export default function RootLayout({
       className={cn(openSans.variable, "font-sans", geist.variable)}
       suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col dark">
+      <body className="min-h-full max-w-[1080] mx-auto  dark">
         <Header />
         <TanstackProvider>{children}</TanstackProvider>
       </body>

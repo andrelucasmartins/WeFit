@@ -62,7 +62,7 @@ export const ListFilm = () => {
         return (
           <Card
             key={product.id}
-            className="bg-white text-[#2F2E41] flex flex-col items-center p-4 rounded-lg gap-2 w-full"
+            className="bg-white text-[#2F2E41] flex flex-col items-center p-4 rounded gap-2 w-full"
           >
             <div className="relative w-36.75 h-47 flex items-center justify-center">
               <Image
@@ -71,7 +71,7 @@ export const ListFilm = () => {
                 width={147}
                 height={188}
                 loading="eager"
-                className="object-contain h-auto"
+                className="object-contain h-47 w-36.75"
               />
             </div>
 
@@ -84,7 +84,7 @@ export const ListFilm = () => {
             </span>
 
             <Button
-              className={`uppercase text-xs font-bold h-10 w-full text-white ${quantity > 0 ? "bg-success hover:bg-success/90" : "bg-primary hover:bg-[#0082b5]"} flex items-center justify-center gap-3 rounded-lg mt-auto`}
+              className={`uppercase text-xs font-bold h-10 w-full text-white ${quantity > 0 ? "bg-success hover:bg-success/90" : "bg-primary hover:bg-[#0082b5]"} flex items-center justify-center gap-3 rounded mt-auto`}
               onClick={() => addToCart(product)}
             >
               <div className="flex items-center gap-1 font-normal text-xs">

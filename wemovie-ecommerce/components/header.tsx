@@ -9,18 +9,18 @@ export const Header = () => {
   const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
 
   return (
-    <header className="w-full py-4 px-6">
-      <div className="max-w-7xl mx-auto flex items-center my-4 justify-between">
-        <Link href="/" className="text-2xl font-bold text-foreground">
+    <header className="w-full px-4 py-[31.5px]">
+      <div className="max-w-7xl mx-auto flex items-center justify-between">
+        <Link href="/" className="text-xl font-bold text-foreground">
           WeMovies
         </Link>
 
-        <div className="flex items-center gap-6 justify-around">
+        <div className="flex items-center gap-2 justify-around">
           <div className="flex justify-end gap-1 flex-col text-right">
-            <div className="text-muted-foreground transition-colors text-sm hidden md:block">
+            <div className="text-white transition-colors text-sm hidden md:block">
               Meu carrinho
             </div>
-            <div className="text-foreground/70 transition-colors text-sm">
+            <div className="text-foreground/70 transition-colors text-xs">
               {totalItems} item{totalItems === 1 ? "" : "s"}
             </div>
           </div>
@@ -29,7 +29,7 @@ export const Header = () => {
             href="/carrinho"
             className="hover:text-foreground transition-colors"
           >
-            <MdShoppingBasket className="text-3xl" />
+            <MdShoppingBasket className="text-2xl" />
           </Link>
         </div>
       </div>
